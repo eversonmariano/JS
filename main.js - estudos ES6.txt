@@ -1,0 +1,43 @@
+/*
+//REST - pega o resto das propriedades de um objeto.
+
+//Exemplo com um Objeto
+/*
+const convidado = {nome:"Everson", idade:39, endereco:"rua XX"};
+
+const {nome, ...rest} = convidado;
+*/
+//console.log(nome);
+//console.log(rest);
+
+//Exemplo com um array
+/*
+const convidados = [
+{nome:"Everson", idade:39, endereco:"rua AA"},
+{nome:"Maria", idade:15, endereco:"rua BB"},
+{nome:"Paulo", idade:20, endereco:"rua CC"},
+{nome:"Ze", idade:56, endereco:"rua DD"}
+]
+
+const [conv1, conv2, ...outros] = convidados;
+*/
+/*
+console.log(conv1);
+console.log(conv2);
+console.log(outros);
+*/
+
+/*SPREAD - REPASSAR AS PROPRIEDADES PARA OUTRO OBJETO*/
+
+const arr1 = [1,2,3,4];
+const arr2 = [5,6,7,8];
+
+const arr3 = [...arr1, ...arr2];
+
+console.log(arr3);
+
+const convidado1 = {nome:"Everson", idade:39, endereco:"rua XX"};
+
+const novoConvidado = {...convidado1, idade: 40};
+
+console.log(novoConvidado);
